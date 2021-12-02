@@ -1,7 +1,9 @@
 #Link to challenge: https://adventofcode.com/2021/day/1
 
+import os
+
 lines = []
-with open('input.txt') as f:
+with open(os.getcwd() + '\\1\\input.txt') as f:
     lines = f.readlines()
 
 count = 0
