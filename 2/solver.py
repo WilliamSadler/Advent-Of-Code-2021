@@ -21,3 +21,22 @@ for i in range(0, len(lines)):
 
 print(depth*hor)
     
+aim = 0
+hor = 0
+depth = 0
+
+#[part 2]
+for i in range(0, len(lines)):
+    movement = lines[i].strip().split()
+    direction = movement[0]
+    value = int(movement[1])
+
+    if(direction == "forward"):
+        hor += value
+        depth += aim*value
+    elif(direction == "down"):
+        aim += value
+    elif(direction == "up"):
+        aim -= value
+
+print(depth*hor)
