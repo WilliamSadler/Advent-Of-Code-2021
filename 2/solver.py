@@ -19,9 +19,5 @@ for i in range(0, len(lines)):
     elif(direction == "up"):
         depth -= value
 
-    print(movement)
-    print(depth)
-    print(hor)
-
 print(depth*hor)
     
